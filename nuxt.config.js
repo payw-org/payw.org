@@ -9,4 +9,13 @@ export default {
   build: {
     publicPath: '/dist/'
   },
+  css: [
+    {
+      src: 'assets/scss/globalstyle.scss',
+      lang: 'scss'
+    },
+    {
+      src: 'assets/css/fonts.css'
+    }
+  ]
 }
