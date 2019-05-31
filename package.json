@@ -4,7 +4,8 @@
   "description": "Payw Website",
   "main": "index.js",
   "scripts": {
-    "dev": "PORT=3333 nuxt"
+    "dev": "PORT=3333 nuxt",
+    "generate": "nuxt generate"
   },
   "repository": {
     "type": "git",
