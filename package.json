@@ -1,0 +1,22 @@
+{
+  "name": "payw.org",
+  "version": "1.0.0",
+  "description": "Payw Website",
+  "main": "index.js",
+  "scripts": {
+    "dev": "PORT=3333 nuxt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/payasyouwant/payw.org.git"
+  },
+  "author": "Payw",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/payasyouwant/payw.org/issues"
+  },
+  "homepage": "https://github.com/payasyouwant/payw.org#readme",
+  "devDependencies": {
+    "nuxt": "^2.8.0"
+  }
+}
