@@ -58,11 +58,12 @@ export default {
   margin: auto;
   height: 100vh;
   text-align: center;
+  padding: 1.5rem 0;
 
   .container {
     background-color: #f8f8f8;
     padding: 7rem 1.5rem;
-    margin: 1.5rem 0;
+    margin-bottom: 1.5rem;
   }
 
   .container.payw {
