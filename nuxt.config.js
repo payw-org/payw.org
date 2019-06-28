@@ -15,7 +15,7 @@ export default {
       lang: 'scss'
     },
     {
-      src: 'assets/css/fonts.css'
+      src: 'assets/css/fonts_new.css'
     }
   ]
 }
