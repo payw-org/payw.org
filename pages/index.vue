@@ -30,7 +30,7 @@
     </div>
 
     <div class="container webuffet">
-      <a href="" target="_blank" class="expand"></a>
+      <a href="https://github.com/CAU-OSS-2019/webuffet" target="_blank" class="expand"></a>
       <div class="logo-circle"></div>
       <div class="content">
         <p class="description">웹사이트를 내맘대로</p>
@@ -45,7 +45,7 @@
 export default {
   head() {
     return {
-      title: 'Payw'
+      title: 'PAYW'
     }
   }
 }
