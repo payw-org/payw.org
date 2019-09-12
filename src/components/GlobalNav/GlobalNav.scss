@@ -1,0 +1,27 @@
+#globalnav {
+  width: 100%;
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: calc(100% - 2rem);
+    margin: auto;
+
+    $text-size: 2rem;
+    $logo-size: $text-size * 2.7;
+
+    .logo {
+      width: $logo-size;
+      height: $logo-size;
+    }
+
+    .title {
+      font-size: $text-size;
+      font-weight: 600;
+    }
+  }
+}
