@@ -1,0 +1,71 @@
+#home {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: calc(100% - 2rem);
+    margin: auto;
+
+    $text-size: 2.7rem;
+    $logo-size: $text-size * 2.8;
+
+    .logo {
+      width: $logo-size;
+      height: $logo-size;
+    }
+
+    .title {
+      font-size: $text-size;
+      font-weight: 600;
+    }
+
+    .manifesto {
+      color: #808080;
+
+      .heart {
+        display: inline-block;
+        margin: 0 0.1rem;
+      }
+    }
+  }
+
+  .join {
+    $br: 0.8rem;
+    position: relative;
+    height: 2.5rem;
+    font-weight: 500;
+    font-size: 1.2rem;
+    background: linear-gradient(to bottom, #333, #000);
+    color: #fff;
+    // border: 1px solid #000;
+    border-radius: $br;
+    padding: 0 1rem;
+    margin-top: 2rem;
+
+    &:hover {
+      text-decoration: underline;
+    }
+
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border-radius: $br;
+    }
+  }
+}

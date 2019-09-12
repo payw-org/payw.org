@@ -1,27 +1,44 @@
 {
   "name": "payw.org",
-  "version": "1.0.0",
-  "description": "Payw Website",
-  "main": "index.js",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/jest": "^24.0.18",
+    "@types/node": "^12.7.5",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "3.1.1",
+    "react-spring": "^8.0.27",
+    "typescript": "^3.6.3"
+  },
   "scripts": {
-    "dev": "PORT=3333 nuxt",
-    "generate": "nuxt generate",
-    "deploy": "gh-pages -d dist"
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/payasyouwant/payw.org.git"
+  "eslintConfig": {
+    "extends": "react-app"
   },
-  "author": "Payw",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/payasyouwant/payw.org/issues"
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "homepage": "https://github.com/payasyouwant/payw.org#readme",
   "devDependencies": {
-    "gh-pages": "^2.0.1",
-    "node-sass": "^4.12.0",
-    "nuxt": "^2.8.0",
-    "sass-loader": "^7.1.0"
+    "@types/react-router-dom": "^4.3.5",
+    "gh-pages": "^2.1.1",
+    "node-sass": "^4.12.0"
   }
 }
