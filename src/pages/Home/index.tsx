@@ -9,9 +9,16 @@ export default function () {
   const [isFontsLoaded, setIsFontsLoaded] = useState(false)
 
   useEffect(() => {
-    ;(document as any).fonts.ready.then(() => {
-      setIsFontsLoaded(true)
-    })
+    const documentFonts = (document as any).fonts
+    if (!documentFonts) {
+      setTimeout(() => {
+        setIsFontsLoaded(true)
+      }, 300)
+    } else {
+      documentFonts.ready.then(() => {
+        setIsFontsLoaded(true)
+      })
+    }
   }, [])
 
   return (
