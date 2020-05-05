@@ -63,6 +63,10 @@ export default function () {
           </button>
         </a>
       </div>
+
+      <div className="masterpieces">
+        <section className="eodiro"></section>
+      </div>
     </div>
   )
 }
