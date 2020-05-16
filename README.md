@@ -1,3 +1,3 @@
-<h1 align="center">payw.org</h1>
+## payw.org
 
-<h3 align="center">Welcome to PAYW website</h3>
+The official PAYW website
