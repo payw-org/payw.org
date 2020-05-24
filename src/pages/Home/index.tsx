@@ -38,7 +38,7 @@ export default function () {
 
           <h2 className="organization-full-name">
             <span className="splash">Pay</span>{' '}
-            <span className="splash">As</span>{' '}
+            <span className="splash">as</span>{' '}
             <span className="splash">You</span>{' '}
             <span className="splash">Want</span>
           </h2>
