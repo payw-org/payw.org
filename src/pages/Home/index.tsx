@@ -53,7 +53,7 @@ export default function () {
         </section>
 
         <a
-          href="https://github.com/paywteam"
+          href="https://github.com/payw-org"
           className="visit-link"
           target="_blank"
           rel="noopener noreferrer"
