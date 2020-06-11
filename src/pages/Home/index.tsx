@@ -3,7 +3,7 @@ import './style.scss'
 import React, { useEffect, useState } from 'react'
 
 import Logo from 'assets/graphics/icons/v2-aligned.svg'
-import classnames from 'classnames'
+import classNames from 'classnames'
 
 export default function () {
   const [isFontsLoaded, setIsFontsLoaded] = useState(false)
@@ -24,7 +24,7 @@ export default function () {
   return (
     <div
       id="home"
-      className={classnames({
+      className={classNames({
         'is-fonts-loaded': isFontsLoaded,
       })}
     >
@@ -65,7 +65,7 @@ export default function () {
       </div>
 
       <div className="masterpieces">
-        <section className="eodiro"></section>
+        <section className="payw-pro"></section>
       </div>
     </div>
   )
