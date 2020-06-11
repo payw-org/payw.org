@@ -67,6 +67,10 @@ $splash-easing: cubic-bezier(0.38, 0.34, 0.07, 1);
     .visit-github-btn {
       animation: 500ms btn-appear ease 1.8s forwards;
     }
+
+    .masterpieces {
+      opacity: 1;
+    }
   }
 
   .hero {
@@ -176,5 +180,11 @@ $splash-easing: cubic-bezier(0.38, 0.34, 0.07, 1);
     @media only screen and (max-width: 700px) {
       padding: 0.7rem 1rem;
     }
+  }
+
+  .masterpieces {
+    opacity: 0;
+    transition: opacity 500ms ease;
+    transition-delay: 2s;
   }
 }
