@@ -1,4 +1,4 @@
-:root {
+#home {
   --logo-size: 10rem;
   --name-size: 8rem;
   --sub-name-size: 5rem;
@@ -10,7 +10,7 @@
 }
 
 @media only screen and (max-width: 700px) {
-  :root {
+  #home {
     --logo-size: 5rem;
     --name-size: 3rem;
     --sub-name-size: 2rem;
@@ -49,23 +49,23 @@ $splash-easing: cubic-bezier(0.38, 0.34, 0.07, 1);
 #home {
   &.is-fonts-loaded {
     .hero .logo {
-      animation: 900ms cubic-bezier(0.61, 0.11, 0.22, 0.98) appear forwards;
+      animation: appear 900ms cubic-bezier(0.61, 0.11, 0.22, 0.98) forwards;
     }
 
     .hero .header .organization-name span {
-      animation: 900ms $splash-easing 500ms splash-up forwards;
+      animation: splash-up 900ms $splash-easing 500ms forwards;
     }
 
     .hero .header .organization-full-name .splash {
-      animation: 500ms $splash-easing splash-up forwards;
+      animation: splash-up 500ms $splash-easing forwards;
     }
 
     .manifesto {
-      animation: 900ms load-manifesto ease 1.1s forwards;
+      animation: load-manifesto 900ms ease 1.1s forwards;
     }
 
     .visit-github-btn {
-      animation: 500ms btn-appear ease 1.8s forwards;
+      animation: btn-appear 500ms ease 1.8s forwards;
     }
 
     .masterpieces {
@@ -106,6 +106,7 @@ $splash-easing: cubic-bezier(0.38, 0.34, 0.07, 1);
       .organization-full-name {
         font-size: var(--sub-name-size);
         overflow-y: hidden;
+        font-weight: 700;
         color: #bbbbbb;
         line-height: auto;
         letter-spacing: -0.03em;

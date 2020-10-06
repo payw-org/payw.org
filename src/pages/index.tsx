@@ -1,11 +1,8 @@
-import './style.scss'
-
+import $$ from 'classnames'
 import React, { useEffect, useState } from 'react'
+import $ from './home.module.scss'
 
-import Logo from 'assets/graphics/icons/v2-aligned.svg'
-import classNames from 'classnames'
-
-export default function () {
+export default function Home() {
   const [isFontsLoaded, setIsFontsLoaded] = useState(false)
 
   useEffect(() => {
@@ -23,29 +20,33 @@ export default function () {
 
   return (
     <div
-      id="home"
-      className={classNames({
-        'is-fonts-loaded': isFontsLoaded,
+      id={$['home']}
+      className={$$({
+        [$['is-fonts-loaded']]: isFontsLoaded,
       })}
     >
-      <div className="hero">
-        <img src={Logo} alt="PAYW Logo" className="logo" />
+      <div className={$['hero']}>
+        <img
+          src="/assets/graphics/icons/v2-aligned.svg"
+          alt="PAYW Logo"
+          className={$['logo']}
+        />
 
-        <section className="header">
-          <h1 className="organization-name">
+        <section className={$['header']}>
+          <h1 className={$['organization-name']}>
             <span>PAYW</span>
           </h1>
 
-          <h2 className="organization-full-name">
-            <span className="splash">Pay</span>{' '}
-            <span className="splash">as</span>{' '}
-            <span className="splash">You</span>{' '}
-            <span className="splash">Want</span>
+          <h2 className={$['organization-full-name']}>
+            <span className={$['splash']}>Pay</span>{' '}
+            <span className={$['splash']}>as</span>{' '}
+            <span className={$['splash']}>You</span>{' '}
+            <span className={$['splash']}>Want</span>
           </h2>
         </section>
 
-        <section className="manifesto">
-          <p className="paragraph">
+        <section className={$['manifesto']}>
+          <p className={$['paragraph']}>
             Our mission is to give people a great experience through our great
             software which always are and will be open to you. You don’t have to
             pay anything.
@@ -54,18 +55,18 @@ export default function () {
 
         <a
           href="https://github.com/payw-org"
-          className="visit-link"
+          className={$['visit-link']}
           target="_blank"
           rel="noopener noreferrer"
         >
-          <button tabIndex={-1} className="visit-github-btn">
+          <button tabIndex={-1} className={$['visit-github-btn']}>
             Visit GitHub
           </button>
         </a>
       </div>
 
-      <div className="masterpieces">
-        <section className="payw-pro"></section>
+      <div className={$['masterpieces']}>
+        <section className={$['payw-pro']}></section>
       </div>
     </div>
   )
