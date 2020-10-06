@@ -1,0 +1,59 @@
+@use './payw-pro.css';
+@use './framework7-icons.css';
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-size: initial;
+  font-family: inherit;
+  font-weight: initial;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-family: 'PAYW Pro', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+    Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: #000;
+}
+
+.background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to bottom, #fafafc, #efeff2);
+  z-index: -1;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+li {
+  text-decoration: none;
+}
+
+hr {
+  border: none;
+}
+
+span {
+  font: inherit;
+}
