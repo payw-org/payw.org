@@ -2,13 +2,11 @@
   "name": "payw.org",
   "version": "0.1.0",
   "scripts": {
-    "dev": "react-scripts start",
-    "build": "react-scripts build && npm run add-domain",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
+    "dev": "next dev",
+    "build": "next build && next export",
     "add-domain": "echo \"payw.org\" > build/CNAME",
     "deploy": "gh-pages -d build",
-    "all-in-one": "npm run build && npm run add-domain && npm run deploy"
+    "all-in-one": "npm run build && npm run deploy"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -27,10 +25,10 @@
   },
   "dependencies": {
     "classnames": "^2.2.6",
+    "next": "^9.5.3",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "3.4.3",
     "react-spring": "^8.0.27",
     "typescript": "^4.0.3"
   },
