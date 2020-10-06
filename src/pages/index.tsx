@@ -6,16 +6,20 @@ export default function Home() {
   const [isFontsLoaded, setIsFontsLoaded] = useState(false)
 
   useEffect(() => {
-    const documentFonts = (document as any).fonts
-    if (!documentFonts) {
-      setTimeout(() => {
-        setIsFontsLoaded(true)
-      }, 300)
-    } else {
-      documentFonts.ready.then(() => {
-        setIsFontsLoaded(true)
-      })
-    }
+    // const documentFonts = (document as any).fonts
+    // if (!documentFonts) {
+    //   setTimeout(() => {
+    //     setIsFontsLoaded(true)
+    //   }, 300)
+    // } else {
+    //   documentFonts.ready.then(() => {
+    //     setIsFontsLoaded(true)
+    //   })
+    // }
+
+    setTimeout(() => {
+      setIsFontsLoaded(true)
+    }, 300)
   }, [])
 
   return (
