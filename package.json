@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
-    "build": "next build && next export",
-    "add-domain": "echo \"payw.org\" > build/CNAME",
-    "deploy": "gh-pages -d build",
+    "add-domain": "echo \"payw.org\" > out/CNAME",
+    "build": "next build && next export && npm run add-domain",
+    "deploy": "gh-pages -d out",
     "all-in-one": "npm run build && npm run deploy"
   },
   "eslintConfig": {
