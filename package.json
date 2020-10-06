@@ -3,8 +3,7 @@
   "version": "0.1.0",
   "scripts": {
     "dev": "next dev",
-    "add-domain": "echo \"payw.org\" > out/CNAME",
-    "build": "next build && next export && npm run add-domain",
+    "build": "next build && next export",
     "deploy": "gh-pages -d out",
     "all-in-one": "npm run build && npm run deploy"
   },
