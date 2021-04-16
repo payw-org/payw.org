@@ -52,8 +52,7 @@ export default function Home() {
         <section className={$['manifesto']}>
           <p className={$['paragraph']}>
             Our mission is to give people a great experience through our great
-            software which always are and will be open to you. You don’t have to
-            pay anything.
+            software which always are and will be open to you.
           </p>
         </section>
 
